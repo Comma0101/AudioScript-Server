@@ -4,17 +4,14 @@ import express from "express";
 
 dotenv.config();
 
+console.log(process.env.OPENAI_API_KEY);
 const app = express();
 const port = 3000;
 
-//OpenAI Authentication
 const configuration = new Configuration({
-  organization: process.env.OPENAI_ORGANIZATION,
+  organization: "org-ygg4H6k8tXDl02uM7MV9WkD4",
   apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
-const response = await openai.listEngines();
-//
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
