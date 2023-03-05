@@ -1,0 +1,15 @@
+{
+  "name": "audioscript-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "commayc,kevin",
+  "license": "MIT",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
